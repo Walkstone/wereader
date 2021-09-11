@@ -57,14 +57,14 @@ def pack():
 
     # 删除文件夹
     print('\n删除指定文件夹')
-    folders_need_remove = ['data', 'scripts', '.vscode']
+    folders_need_remove = ['data', 'scripts', '.vscode', 'res']
     for foldername in folders_need_remove:
         folder = os.path.join(desktop_extension, foldername)
         removefolder(folder)
     
     # 删除文件
     print('\n删除指定文件')
-    files_need_remove = [r'.gitignore']
+    files_need_remove = [r'.gitignore', 'Contribute.md']
     for filename in files_need_remove:
         file = os.path.join(desktop_extension, filename)
         removefile(file)
