@@ -191,3 +191,29 @@ class Wereader{
         return resp;
     }
 }
+
+// class DeDao{
+//     constructor(book_enid){
+//         const url = `https://www.dedao.cn`;
+//         this.book_enid = book_enid;
+//         this.bookmarksUrl = `${url}/api/pc/ledgers/ebook/list`;
+//     }
+
+//     async getBookmarks(){
+// 		const data = await fetch(this.bookmarksUrl, {
+//             "method": "POST",
+//             "headers": {
+//                 "accept": "application/json, text/plain, */*",
+//                 "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+//                 "content-type": "application/json"
+//             },
+//             "body": `{"book_enid":"${this.book_enid}"}`,
+//             "method": "POST",
+//             "mode": "cors",
+//             "credentials": "include"
+//         });
+//         const json = await data.json();
+//         console.log(json);
+//         return json;
+//     }
+// }

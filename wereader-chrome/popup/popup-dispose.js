@@ -47,6 +47,9 @@ chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     if(!/:\/\/weread\.qq\.com\/web\/reader\/[^\s]*/.test(tabs[0].url)) {
         removeTab('noteBtn');
         if(bg.Config.enableDevelop) removeTab('testBtn');
+        // if(!/:\/\/www\.dedao\.cn\/reader[^\s]*/.test(tabs[0].url)){
+          
+        // }
     }
     // 绑定标签页按钮点击事件
     let tablinks = document.querySelectorAll('.tablinks');

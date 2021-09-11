@@ -62,6 +62,18 @@ function getTest(){
 		console.log(await getReadDetail(0));
 	}
 
+	/* let logDedaoBookMarks = async ()=>{
+		chrome.tabs.query({active: true, lastFocusedWindow: true},tabs=>{
+			let url = tabs[0].url;
+			let match = url.match(/(?<=id=)(.*)/);
+			let id = match ? match[0] : undefined;
+			if(id){
+				let dedao = new DeDao(id);
+				dedao.getBookmarks();
+			}
+		});
+	} */
+
 	let functions = {
 		'logBookmarksJson': logBookmarksJson,
 		'logStorage': logStorage,
